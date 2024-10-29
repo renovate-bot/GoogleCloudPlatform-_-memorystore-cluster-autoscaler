@@ -1,0 +1,33 @@
+[
+  {
+    "$comment": "test data",
+    "projectId": "basic-configuration",
+    "regionId": "us-central1",
+    "clusterId": "another-memorystore1",
+    "scalerPubSubTopic": "projects/my-memorystore-project/topics/memorystore-scaling",
+    "units": "SHARDS",
+    "minSize": 5,
+    "maxSize": 30,
+    "scalingMethod": "DIRECT"
+  },
+  {
+    "projectId": "custom-threshold",
+    "regionId": "us-central1",
+    "clusterId": "memorystore1",
+    "scalerPubSubTopic": "projects/my-memorystore-project/topics/memorystore-scaling",
+    "units": "SHARDS",
+    "minSize": 3,
+    "maxSize": 5,
+    "scalingProfile": "CPU"
+  },
+  {
+    "projectId": "custom-metric",
+    "regionId": "us-central1",
+    "clusterId": "another-memorystore1",
+    "scalerPubSubTopic": "projects/my-memorystore-project/topics/memorystore-scaling",
+    "units": "SHARDS",
+    "minSize": 5,
+    "maxSize": 30,
+    "scalingMethod": "STEPWISE"
+  }
+]

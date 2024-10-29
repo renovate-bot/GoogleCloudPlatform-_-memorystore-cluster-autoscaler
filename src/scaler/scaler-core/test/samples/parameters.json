@@ -1,0 +1,43 @@
+{
+  "projectId": "project1",
+  "regionId": "region1",
+  "clusterId": "cluster1",
+  "units": "SHARDS",
+  "minSize": 5,
+  "maxSize": 10,
+  "stepSize": 1,
+  "shardCount": 6,
+  "sizeGb": 78,
+  "scalingProfile": "CPU_AND_MEMORY",
+  "scalingMethod": "STEPWISE",
+  "minFreeMemoryPercent": 30,
+  "scaleOutCoolingMinutes": 5,
+  "scaleInCoolingMinutes": 30,
+  "metrics": [
+    {
+      "name": "cpu_maximum_utilization",
+      "value": 0
+    },
+    {
+      "name": "cpu_average_utilization",
+      "value": 0
+    },
+    {
+      "name": "memory_maximum_utilization",
+      "value": 0
+    },
+    {
+      "name": "memory_average_utilization",
+      "value": 0
+    },
+    {
+      "name": "maximum_evicted_keys",
+      "value": 0
+    },
+    {
+      "name": "average_evicted_keys",
+      "value": 0
+    }
+  ],
+  "currentSize": 5
+}

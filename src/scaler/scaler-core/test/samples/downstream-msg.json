@@ -1,0 +1,34 @@
+{
+  "projectId": "project1",
+  "regionId": "region1",
+  "instanceId": "cluster1",
+  "currentSize": 100,
+  "suggestedSize": 300,
+  "units": "SHARDS",
+  "metrics": [
+    {
+      "name": "cpu_maximum_utilization",
+      "scaleInThreshold": 50,
+      "scaleOutThreshold": 70,
+      "value": 0.19835128894461815
+    },
+    {
+      "name": "cpu_average_utilization",
+      "scaleInThreshold": 50,
+      "scaleOutThreshold": 70,
+      "value": 0.18477335171747497
+    },
+    {
+      "name": "memory_maximum_utilization",
+      "scaleInThreshold": 50,
+      "scaleOutThreshold": 70,
+      "value": 0.0186809696873731
+    },
+    {
+      "name": "memory_average_utilization",
+      "scaleInThreshold": 50,
+      "scaleOutThreshold": 70,
+      "value": 0.018497523020197155
+    }
+  ]
+}

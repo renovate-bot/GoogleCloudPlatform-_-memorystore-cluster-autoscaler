@@ -1,0 +1,13 @@
+[
+  {
+    "projectId": "basic-configuration",
+    "regionId": "us-central1",
+    "clusterId": "another-memorystore1",
+    "scalerPubSubTopic": "projects/my-memorystore-project/topics/memorystore-scaling",
+    "units": "SHARDS",
+    "minSize": 5,
+    "maxSize": 30,
+    "scalingMethod": "DIRECT",
+    "garbage": "value"
+  }
+]
