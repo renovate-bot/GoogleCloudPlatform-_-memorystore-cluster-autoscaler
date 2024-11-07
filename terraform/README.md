@@ -105,9 +105,6 @@ Autoscaler:
     [Container Threat Detection][container-threat-detection], to help
     secure your deployment.
 
-Please note that during the Preview program we recommend using the Autoscaler
-in non-production environments only.
-
 <!-- LINKS: https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [alerts]: https://cloud.google.com/monitoring/alerts
