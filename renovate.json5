@@ -46,7 +46,7 @@
     {
       // Temporarily disable updates for markdown-link-check as versions > v3.13.2
       // are broken
-      matchPackageNames: ["markdown-link-check/"],
+      matchPackageNames: ["markdown-link-check"],
       matchDatasources: ["npm"],
       enabled: false,
     },
