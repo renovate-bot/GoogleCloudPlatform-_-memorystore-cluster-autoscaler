@@ -49,6 +49,10 @@
       groupName: "docker-containers",
     },
     {
+      matchDatasources: ["go"],
+      groupName: "golang-modules",
+    },
+    {
       // Temporarily disable updates for markdown-link-check as versions > v3.13.2
       // are broken
       matchPackageNames: ["markdown-link-check"],
