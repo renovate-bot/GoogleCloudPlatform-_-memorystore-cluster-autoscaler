@@ -6,6 +6,11 @@
     ":semanticCommitTypeAll(fix)",
     ":enableVulnerabilityAlertsWithLabel(security)",
   ],
+  ignorePaths: [
+    // override default ingorePaths which would ignore files in test directories
+    "**/node_modules/**",
+    "**/bower_components/**",
+  ],
   packageRules: [
     {
       description: "Do not create PRs for nodejs/npm engine updates",
