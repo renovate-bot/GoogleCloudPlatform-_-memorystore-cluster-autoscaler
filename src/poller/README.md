@@ -209,6 +209,14 @@ for managing the state of the Autoscaler.
 | -------------------------- | ------------ | ----------- |
 | `name`                     | `firestore`  | Name of the database for managing the state of the Autoscaler. By default, Firestore is used. The currently supported values are `firestore` and `spanner`. |
 
+### State Management in Firestore
+
+If the value of `name` is `firestore`, the following values are optional.
+
+| Key                        | Description |
+| -------------------------- | ----------- |
+| `databaseId`               | The database ID of the Firestore database you want to use to store the autoscaler state. If omitted, the default (`(default)`) database will be used. Note that the database must exist. |
+
 ### State Management in Cloud Spanner
 
 If the value of `name` is `spanner`, the following values are required.
