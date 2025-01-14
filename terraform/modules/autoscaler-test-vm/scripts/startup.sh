@@ -46,6 +46,7 @@ cat << 'EOF' > /etc/motd
 EOF
 
 # Install dependencies
+export DEBIAN_FRONTEND=noninteractive
 apt-get update && apt-get upgrade -y
 apt-get install redis-tools build-essential autoconf automake libpcre3-dev libevent-dev pkg-config zlib1g-dev git libssl-dev htop -y
 
