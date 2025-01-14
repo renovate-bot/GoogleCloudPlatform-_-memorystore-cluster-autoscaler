@@ -107,7 +107,7 @@ In this section you prepare your project for deployment.
 3.  In Cloud Shell, clone this repository:
 
     ```sh
-    gcloud source repos clone memorystore-cluster-autoscaler --project=memorystore-oss-preview
+    git clone https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler.git
     ```
 
 4.  Change into the directory of the cloned repository, and check out the

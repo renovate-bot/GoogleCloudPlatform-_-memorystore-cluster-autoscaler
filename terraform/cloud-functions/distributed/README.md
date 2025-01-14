@@ -112,7 +112,7 @@ The distributed deployment has the following pros and cons:
 3.  In Cloud Shell, clone this repository:
 
     ```sh
-    gcloud source repos clone memorystore-cluster-autoscaler --project=memorystore-oss-preview
+    git clone https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler.git
     ```
 
 4.  Change into the directory of the cloned repository, and check out the
@@ -377,7 +377,6 @@ topic and function in the project where the Memorystore Cluster instances live.
     prompted, after reviewing the resources that Terraform intends to create.
 
     ```sh
-    terraform import module.autoscaler-scheduler.google_app_engine_application.app "${APP_PROJECT_ID}"
     terraform apply -parallelism=2
     ```
 
