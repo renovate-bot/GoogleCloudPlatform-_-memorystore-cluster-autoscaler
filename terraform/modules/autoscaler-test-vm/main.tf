@@ -70,8 +70,8 @@ resource "google_compute_firewall" "rules" {
   project       = var.project_id
   network       = var.network
   name          = "ssh"
-  description   = "Allow SSH from anywhere"
-  source_ranges = ["0.0.0.0/0"]
+  description   = "Allow SSH from Identity-Aware Proxy"
+  source_ranges = ["35.235.240.0/20"]
   allow {
     protocol = "tcp"
     ports    = ["22"]
