@@ -199,8 +199,9 @@ Autoscaler infrastructure, with the exception of Cloud Scheduler, lives.
     export TF_VAR_firestore_state_database=<DATABASE_NAME>
     ```
 
-    If you do not set this variable, the default database will be used
-    (`(default)`).
+    If you do not set this variable, Terraform will create and use a dedicated
+    Firestore database named `memorystore-autoscaler-state` for storing
+    Autoscaler state.
 
 3.  Next, continue to [Deploying the Autoscaler](#deploying-the-autoscaler).
 
