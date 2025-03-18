@@ -196,7 +196,21 @@ In this section you prepare your project for deployment.
       serviceconsumermanagement.googleapis.com
     ```
 
-6.  There are two options for deploying the state store for the Autoscaler:
+6.  The Autoscaler is capable of scaling two types of Memorystore clusters:
+
+    1.  [Memorystore for Redis Cluster][memorystore-for-redis-cluster]
+    2.  [Memorystore for Valkey][memorystore-for-valkey]
+
+    [Memorystore for Redis Cluster][memorystore-for-redis-cluster] is the default.
+
+    If you would like to use [Memorystore for Valkey][memorystore-for-valkey], set
+    the following variable:
+
+    ```sh
+    export TF_VAR_memorystore_engine=valkey
+    ```
+
+7.  There are two options for deploying the state store for the Autoscaler:
 
     1.  Store the state in [Firestore][cloud-firestore]
     2.  Store the state in [Spanner][spanner]
@@ -683,6 +697,8 @@ following the instructions above.
 [kubernetes-job]: https://kubernetes.io/docs/concepts/workloads/controllers/job/
 [logging-iam-role]: https://cloud.google.com/logging/docs/access-control#logging.logWriter
 [margins]: ../../src/poller/README.md#margins
+[memorystore-for-redis-cluster]: https://cloud.google.com/memorystore/docs/cluster/memorystore-for-redis-cluster-overview
+[memorystore-for-valkey]: https://cloud.google.com/memorystore/docs/valkey/product-overview
 [organizational-policy]: https://cloud.google.com/resource-manager/docs/organization-policy/overview
 [otel-collector]: https://opentelemetry.io/docs/collector/
 [project-selector]: https://console.cloud.google.com/projectselector2/home/dashboard

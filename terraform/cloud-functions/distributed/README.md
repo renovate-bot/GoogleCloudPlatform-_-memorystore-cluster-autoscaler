@@ -315,13 +315,28 @@ topic and function in the project where the Memorystore Cluster instances live.
         compute.googleapis.com \
         eventarc.googleapis.com \
         iam.googleapis.com \
+        logging.googleapis.com \
+        memorystore.googleapis.com \
+        monitoring.googleapis.com \
         networkconnectivity.googleapis.com \
         pubsub.googleapis.com \
-        logging.googleapis.com \
-        monitoring.googleapis.com \
         redis.googleapis.com \
         run.googleapis.com \
         serviceconsumermanagement.googleapis.com
+    ```
+
+6.  The Autoscaler is capable of scaling two types of Memorystore clusters:
+
+    1.  [Memorystore for Redis Cluster][memorystore-for-redis-cluster]
+    2.  [Memorystore for Valkey][memorystore-for-valkey]
+
+    [Memorystore for Redis Cluster][memorystore-for-redis-cluster] is the default.
+
+    If you would like to use [Memorystore for Valkey][memorystore-for-valkey], set
+    the following variable:
+
+    ```sh
+    export TF_VAR_memorystore_engine=valkey
     ```
 
 ### Deploy the Application infrastructure
@@ -432,6 +447,8 @@ its configuration issues independently.
 [cloud-spanner]: https://cloud.google.com/spanner
 [enable-billing]: https://cloud.google.com/billing/docs/how-to/modify-project
 [logs-viewer]: https://console.cloud.google.com/logs/query
+[memorystore-for-redis-cluster]: https://cloud.google.com/memorystore/docs/cluster/memorystore-for-redis-cluster-overview
+[memorystore-for-valkey]: https://cloud.google.com/memorystore/docs/valkey/product-overview
 [project-selector]: https://console.cloud.google.com/projectselector2/home/dashboard
 [provider-issue]: https://github.com/hashicorp/terraform-provider-google/issues/6782
 [region-and-zone]: https://cloud.google.com/compute/docs/regions-zones#locations
