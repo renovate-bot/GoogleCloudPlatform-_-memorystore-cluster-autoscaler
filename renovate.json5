@@ -43,6 +43,7 @@
     {
       // Temporarily put opentelemetry into its own group...
       matchPackageNames: ["@opentelemetry/**"],
+      matchUpdateTypes: ["major", "minor", "patch"],
       matchDatasources: ["npm"],
       groupName: "opentelemetry",
     },
