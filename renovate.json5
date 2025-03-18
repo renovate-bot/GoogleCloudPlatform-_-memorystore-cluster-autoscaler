@@ -40,6 +40,12 @@
       dependencyDashboardApproval: true,
       matchPackageNames: ["!googleapis", "!npm", "!node"],
     },
+   {
+      // Temporarily put opentelemetry into its own group...
+      matchPackageNames: ["@opentelemetry/**"],
+      matchDatasources: ["npm"],
+      groupName: "opentelemetry",
+    },
     {
       matchDatasources: ["terraform-module", "terraform-provider"],
       groupName: "terraform",
