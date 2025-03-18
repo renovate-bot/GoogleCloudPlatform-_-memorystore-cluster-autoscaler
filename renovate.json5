@@ -45,6 +45,7 @@
       matchPackageNames: ["@opentelemetry/**"],
       matchUpdateTypes: ["major", "minor", "patch"],
       matchDatasources: ["npm"],
+      dependencyDashboardApproval: false,
       groupName: "opentelemetry",
     },
     {
