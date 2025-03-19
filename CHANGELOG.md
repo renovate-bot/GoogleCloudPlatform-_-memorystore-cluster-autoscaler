@@ -1,5 +1,37 @@
 # Changelog
 
+## [3.0.0](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/compare/v2.0.1...v3.0.0) (2025-03-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* This modifies the ID used to identify clusters in the Autoscaler state storage layer. When this version is first deployed to an existing environment that is managed by the Autoscaler, it may trigger a single additional scaling operation during a cooldown period or while a previously started scaling operation is ongoing.
+
+### Features
+
+* add disambiguation for Valkey/Redis in storage layer ([#77](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/77)) ([4995c3d](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/4995c3d138e84c9f31e19633ece5c3f076c78300))
+* add Valkey support ([#71](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/71)) ([4d3e76d](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/4d3e76dbf0c0f1506530337b22b7439f38b99fcc))
+
+
+### Bug Fixes
+
+* bump jsonpath-plus from 10.2.0 to 10.3.0 ([#73](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/73)) ([6ace5dc](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/6ace5dca9ab70efa9fc3d931cab0e3a85d3b1506))
+* bump undici from 6.20.1 to 6.21.1 ([#75](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/75)) ([070da15](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/070da1542336cbca6cca86fd7d1b94f62436891e))
+* configure terminal as noninteractive ([#64](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/64)) ([5a7b029](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/5a7b0295e97a53231a9387d0adfd9c1bc10258fb))
+* **deps:** security updates ([#87](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/87)) ([61cd121](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/61cd12150e6501c7ebd26df330795df61c86237f))
+* **deps:** update dependency axios to v1.8.3 [security] ([#89](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/89)) ([b16e8cc](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/b16e8cce305d01599ed1626e8bada05b7b372eed))
+* **deps:** update dependency go to v1.24.1 ([#46](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/46)) ([17e9ce6](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/17e9ce61c111db26e48feecb1a851e84ac07a3ca))
+* **deps:** update dependency googleapis to v146 ([#76](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/76)) ([f98a9ed](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/f98a9ed360f0f8f71d579123dc1d0c1914e41d74))
+* **deps:** update dependency markdown-link-check to v3.13.7 ([#88](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/88)) ([29c54d2](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/29c54d20619916b0259c2028b2a226dd03c6b40f))
+* **deps:** update golang-modules ([#58](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/58)) ([7c6e004](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/7c6e004f56a67611581973bceef412fd587118b1))
+* **deps:** update module golang.org/x/net to v0.36.0 [security] ([#86](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/86)) ([8f99efe](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/8f99efe36f2c11fb5e52b4c5fb688664e98846ea))
+* **deps:** update npm-packages ([#59](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/59)) ([654c8ce](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/654c8ce9e03f27db7b9dc4fe47ee2e72e34e73c2))
+* **deps:** update npm-packages ([#63](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/63)) ([b3afd72](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/b3afd7212ae3137317d53b216a204c58e89089f7))
+* **deps:** update npm-packages ([#81](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/81)) ([a2bfd23](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/a2bfd23486fc5f1c5a03bc15fc0039360adccf8f))
+* **deps:** update terraform ([#60](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/60)) ([72e6fa9](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/72e6fa950ea559083fdd4c6d1187bd367d7ea4dd))
+* **deps:** update terraform google to v6.24.0 ([#82](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/82)) ([c1f0ddb](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/c1f0ddb786136ed47ca74bc3e86479db3d37696c))
+* **deps:** update terraform terraform-google-modules/kubernetes-engine/google to v36 ([#70](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/issues/70)) ([fe26d75](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/commit/fe26d75658afafdf6eb7c6f8bd7181122121087b))
+
 ## [2.0.1](https://github.com/GoogleCloudPlatform/memorystore-cluster-autoscaler/compare/v2.0.0...v2.0.1) (2024-12-23)
 
 
