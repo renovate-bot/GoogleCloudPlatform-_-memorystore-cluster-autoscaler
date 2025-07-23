@@ -336,7 +336,7 @@ topic and function in the project where the Memorystore Cluster instances live.
     the following variable:
 
     ```sh
-    export TF_VAR_memorystore_engine=valkey
+    export TF_VAR_memorystore_engine=VALKEY
     ```
 
 ### Deploy the Application infrastructure
