@@ -41,7 +41,6 @@
         "@opentelemetry/**",
         "@google-cloud/opentelemetry-cloud-monitoring-exporter",
       ],
-      matchUpdateTypes: ["major", "minor", "patch"],
       matchDatasources: ["npm"],
       dependencyDashboardApproval: false,
       groupName: "opentelemetry",
