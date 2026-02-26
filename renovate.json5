@@ -37,7 +37,10 @@
       matchPackageNames: ["!googleapis", "!npm", "!node"],
     },
     {
-      matchPackageNames: ["@opentelemetry/**"],
+      matchPackageNames: [
+        "@opentelemetry/**",
+        "@google-cloud/opentelemetry-cloud-monitoring-exporter",
+      ],
       matchUpdateTypes: ["major", "minor", "patch"],
       matchDatasources: ["npm"],
       dependencyDashboardApproval: false,
